@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kite File</title>
+<style>
+  @font-face{
+    font-family: "Bodoni Moda";
+    src: url("fonts/bodoni-moda-500.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; margin: 0; }
+
+  body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #ede0c3;
+    background-image: url("images/kite-diagram.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .word{
+    position: fixed;
+    right: calc(clamp(1rem, 4vw, 3rem) + env(safe-area-inset-right, 0px));
+    bottom: calc(clamp(1rem, 4vw, 3rem) + env(safe-area-inset-bottom, 0px));
+
+    padding: 0.5em 0.75em;
+    background: rgba(237, 224, 195, 0.72);
+    box-shadow: 0 1px 14px rgba(237, 224, 195, 0.55);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .word h1{
+    margin: 0;
+    font-family: "Bodoni Moda", Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 4vw, 2.75rem);
+    letter-spacing: 0.01em;
+    color: #2c2418;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="word"><h1>Kite File</h1></div>
+</body>
+</html>
